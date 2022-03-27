@@ -1,0 +1,674 @@
+﻿@model HomeVM
+<main>
+        <section id="slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @{
+                        var i = 0;
+                        foreach (var item in Model.Sliders)
+                        {
+                            var itemClass = i++ == 0 ? "item active" : "item";
+
+                            <div class="carousel-item @itemClass" style="width: 100%;">
+                                <img class="d-block w-100 " style="width: 100%;" src="./assets/img/@item.Image" alt="First slide">
+                            </div>
+                        }
+                    }
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="color: red;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true" "></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+        <section id="products">
+            <div class="container products">
+                <div class="main-product">
+                    <div class="image">
+                        <a href="">
+                            <img src="./assets/img/baverages-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="detale">
+                        <h3>Beverages</a></h3>
+                    </div>
+                    <div class="count">11 Items</div>
+                </div>
+                <div class="row">
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/breadbakery-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/biscuitssnacks-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/dairy-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/biscuitssnacks-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/fruitvegetables-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/category-image2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/household-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                    <div class="allproducts col-3">
+                        <div class="image">
+                            <a href="">
+                                <img src="./assets/img/meat-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="detale">
+                            <h3><a href="">Biscuits & Snacks</a></h3>
+                            <span>6 items</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="dealsoftheweek">
+            <div class="container deals">
+                <div class="timerdeal">
+                    <div class="dealcontent">
+                        <div class="dealheader">
+                            <div class="header-txt">
+                                <h4>Deals of the <h3>WEEK!</h3>
+                                </h4>
+                            </div>
+                            <div class="clock"></div>
+                        </div>
+                        <div class="deal-detale">
+                            <div class="img">
+                                <div class="deal-discount">19%</div>
+                                <a href="">
+                                    <img src="./assets/img/product-image-50.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-detale">
+                            <div class="prices">
+                                <h5>$5.49</h5>
+                                <h4>$4.49</h4>
+                            </div>
+                        </div>
+                        <div class="name-detale">
+                            <h3>
+                                <a href="">
+                                    Chobani Complete Vanilla Greek Yogurt
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="stock rateing">
+                            <span>1kg</span>
+                            <span>IN STOCK</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="available">
+                            <h6>
+                                AVAILABLE 49
+                            </h6>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 mycard">
+                        <div class="card mycard" >
+                            <img class="card-img-top" src="./assets/img/product-image-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                    <div class="col-4 mycard">
+                        <div class="card mycard" >
+                            <img class="card-img-top" src="./assets/img/product-image-2-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                    <div class="col-4 mycard">
+                        <div class="card" ">
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310 (1).jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                    <div class="col-4 mycard">
+                        <div class="card" ">
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                    <div class="col-4 mycard">
+                        <div class="card" ">
+                            <img class="card-img-top" src="./assets/img/product-image-7-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                    <div class="col-4 mycard">
+                        <div class="card" ">
+                            <img class="card-img-top" src="./assets/img/product-image-14-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Warrior Blend Organic</h5>
+                                <span class="stock">IN STOCK</span>
+                                <div class="rateing">
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                    <i class="fas fa-star activerateing"></i>
+                                </div>
+                                <div class="price mt-3">
+                                    <span class="oldprice">$33.00</span>
+                                    <span class="newprice mx-2">$25.00</span>
+                                </div>
+                                <a href="#" class="btn btn-primary mt-5">Add to card</a>
+                            </div>
+                            <div class="percent">26%</div>
+                            <div class="zoom"><i class="fab fa-joomla"></i></div>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cookie">
+            <div class="container cookies">
+                <div class="row">
+                    <div class="col-6 cookie">
+                        <p>WEEKEND DISCOUNT COUNT 40%</p>
+                        <h4>Cookie and Ice Cream</h4>
+                        <span>Bacola Weekend Discount</span>
+                        <a href="">SHOP</a>
+                        <img src="./assets/img/bacola-banner-11.jpg" alt="">
+                    </div>
+                    <div class="col-6 cookie">
+                        <p>WEEKEND DISCOUNT COUNT 40%</p>
+                        <h4>Cookie and Ice Cream</h4>
+                        <span>Bacola Weekend Discount</span>
+                        <a href="">SHOP</a>
+                        <img src="./assets/img/bacola-banner-12.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="slider2">
+            <div class="container slider2 mt-5">
+                <div class="owl-carousel owl-theme mycarusel">
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-62-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-50.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-7-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-62-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-62-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-62-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <section id="autoshiporder">
+            <div class="container own-container autoship mt-5 mb-5">
+                <div class="row">
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310 (1).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span href="">All Natural Italian-Style Chicken Meatballs</span>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-2-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <span href="">All Natural Italian-Style Chicken Meatballs</span>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-4-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-346x310.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-4-346x310 (1).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-5-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-3-346x310 (1).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-4-346x310 (1).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mycard custom-col-2">
+                        <div class="card ">
+                            <i class="fas fa-heart"></i>
+                            <div class="percent">
+                                23%
+                            </div>
+                            <div class="recommended">
+                                RECOMMENDED
+                            </div>
+                            <img class="card-img-top" src="./assets/img/product-image-4-346x310 (1).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="">All Natural Italian-Style Chicken Meatballs</a>
+
+                                <a href="#" class="btn btn-primary">ADD TO CARD</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>

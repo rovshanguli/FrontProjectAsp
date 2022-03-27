@@ -1,0 +1,176 @@
+%extend-card{
+    .mycard{
+        
+        display: flex;
+        position: relative;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        &:hover i{
+            visibility: visible;
+        }
+        i{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            &:hover{
+                background-color: blue;
+                color: white;
+            }
+        }
+        .card{
+            .card-body{
+                height: 181px;
+                text-align: center;
+                width: 254px;
+            }
+            .percent{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                left: 17px;
+                top: 16px;
+                background-color: $secondary-color;
+                width: 40px;
+                height: 20px;
+                color: white;
+            }
+            .recommended{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                left: 17px;
+                top: 45px;
+                background-color: red;
+                width: 126px;
+                height: 20px;
+                color: white;
+            }
+            a:nth-child(1){
+                text-decoration: none;
+                color: $text-color;
+                display: block;
+                padding: 5px 20px;
+                font-family: $primary-fontFamily;
+                &:hover{
+                color: $succes-color;
+                }
+
+            }
+            a:nth-child(2){
+                position: absolute;
+                bottom:40px;
+                left: 24%;
+                background-color: $text-color;
+                color: white;
+                
+            }
+        }
+    }
+}
+%extend-card2{
+    .mycard{
+        
+        display: flex;
+        position: relative;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        &:hover i{
+            visibility: visible;
+        }
+        i{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            &:hover{
+                background-color: blue;
+                color: white;
+            }
+        }
+        .card{
+            .card-body{
+                height: 100%;
+                text-align: center;
+                width: 100%
+            }
+            .percent{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                left: 17px;
+                top: 16px;
+                background-color: $secondary-color;
+                width: 40px;
+                height: 20px;
+                color: white;
+            }
+            .recommended{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                left: 17px;
+                top: 45px;
+                background-color: red;
+                width: 126px;
+                height: 20px;
+                color: white;
+            }
+            a:nth-child(1){
+                text-decoration: none;
+                color: $text-color;
+                display: block;
+                padding: 5px 20px;
+                font-family: $primary-fontFamily;
+                &:hover{
+                color: $succes-color;
+                }
+
+            }
+            a:nth-child(2){
+                position: absolute;
+                bottom:40px;
+                left: 24%;
+                background-color: $text-color;
+                color: white;
+                
+            }
+        }
+    }
+}
+
+%extend-cardhover{
+    @extend %extend-card;
+    .card a:nth-child(2){
+        display: none;
+    }
+    .mycard:hover{
+        .card a:nth-child(2){
+            display: block;
+                }
+    }
+}

@@ -1,0 +1,766 @@
+#dealsoftheweek .mycard {
+  position: relative;
+  border: none;
+  border-right: 1px solid #edeef5;
+  border-bottom: 1px solid #edeef5;
+}
+
+#dealsoftheweek .mycard .card-body {
+  position: inherit;
+}
+
+#dealsoftheweek .mycard .card-body h5 {
+  font-size: 15px;
+  color: #202335;
+  font-family: "Intern",sans-serif;
+}
+
+#dealsoftheweek .mycard .card-body .stock {
+  color: #00b853;
+  font-size: .6875rem;
+  margin-bottom: 0.625rem;
+  font-weight: bold;
+}
+
+#dealsoftheweek .mycard .card-body .rateing {
+  font-family: 'klbtheme';
+  font-size: 11px;
+  padding-top: 10px;
+}
+
+#dealsoftheweek .mycard .card-body .rateing .activerateing {
+  color: orange;
+}
+
+#dealsoftheweek .mycard .card-body .price .oldprice {
+  text-decoration: line-through;
+  color: #c2c2de;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+#dealsoftheweek .mycard .card-body .price .newprice {
+  font-family: "Dosis",sans-serif;
+}
+
+#dealsoftheweek .mycard .card-body a {
+  width: 100%;
+  background-color: #233a95;
+  color: white;
+  border-radius: 20px;
+  opacity: 0;
+  position: relative;
+}
+
+#dealsoftheweek .mycard:hover a {
+  opacity: 1;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  margin-top: 220px;
+}
+
+#dealsoftheweek .mycard:hover {
+  position: relative;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 2px solid #edeef5;
+  z-index: 12;
+}
+
+#dealsoftheweek .mycard .percent {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #0077b5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Dosis", sans serif;
+  font-weight: 700;
+}
+
+#dealsoftheweek .mycard .zoom {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 30px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+}
+
+#dealsoftheweek .mycard .zoom:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+#dealsoftheweek .mycard .heart {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 80px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+}
+
+#dealsoftheweek .mycard .heart:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+#dealsoftheweek .mycard:hover .heart {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#dealsoftheweek .mycard:hover .zoom {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .covid19 {
+  background-color: #233a95;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+header .menu-secure-help-languages .menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+header .menu-secure-help-languages .menu ul li {
+  margin: 5px 10px;
+}
+
+header .menu-secure-help-languages .menu ul li a {
+  text-decoration: none;
+  color: #c9bfb6;
+}
+
+header .menu-secure-help-languages .menu ul li a:hover {
+  color: #250923;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .menu-secure-help-languages .secure.help.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu-secure-help-languages .secure.help.languages .secure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  padding-right: 10px;
+  border-right: 1px solid #9898b9;
+}
+
+header .menu-secure-help-languages .secure.help.languages .help {
+  font-size: 14px;
+  border-right: 1px solid #9898b9;
+}
+
+header .menu-secure-help-languages .secure.help.languages .help span a {
+  text-decoration: none;
+  color: #5252a8;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+header .menu-secure-help-languages .secure.help.languages .help span a:hover {
+  text-decoration: underline;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language {
+  padding: 4px 10px;
+  font-weight: 500;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language:hover ul {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateY(0.3s);
+          transform: translateY(0.3s);
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language span:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #69718f;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language ul {
+  position: absolute;
+  z-index: 3;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  background-color: white;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language ul li {
+  padding: 5px 10px;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .language ul li:hover {
+  color: #69718f;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money {
+  padding: 4px 10px;
+  font-weight: 500;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money:hover ul {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translateY(0.3s);
+          transform: translateY(0.3s);
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money span:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #69718f;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money ul {
+  position: absolute;
+  z-index: 3;
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  background-color: white;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money ul li {
+  padding: 5px 10px;
+}
+
+header .menu-secure-help-languages .secure.help.languages .languages.moneies .money ul li:hover {
+  color: #69718f;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+header #logo-location-search-basket .logo img {
+  width: 100%;
+  padding-left: 36px;
+}
+
+header #logo-location-search-basket .logo span {
+  font-size: 11px;
+  padding-left: 36px;
+  font-weight: 500;
+}
+
+header #logo-location-search-basket .location .locationbutton {
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: #233a95;
+  height: 56px;
+  margin-left: 20px;
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+header #logo-location-search-basket .location .locationbutton i {
+  padding-left: 10px;
+}
+
+header #logo-location-search-basket .location .sellectlocation #myInput {
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+header #logo-location-search-basket .location .sellectlocation #myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header #logo-location-search-basket .location .sellectlocation #myUL li:hover {
+  color: blue;
+}
+
+header #logo-location-search-basket .location .sellectlocation #myUL li:hover a:hover:not(.header) {
+  background-color: #eee;
+}
+
+header #logo-location-search-basket .location .sellectlocation #myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+header #logo-location-search-basket .searchbox {
+  height: 50px;
+  background-color: #f3f4f7;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+header #logo-location-search-basket .searchbox input {
+  border: none;
+  background-color: #f3f4f7;
+  border-radius: 10px;
+}
+
+header #logo-location-search-basket .searchbox input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header #logo-location-search-basket .searchbox button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header #logo-location-search-basket .basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+}
+
+header #logo-location-search-basket .basket .account {
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #bb9f9f;
+}
+
+header #logo-location-search-basket .basket .account i {
+  font-size: 20px;
+}
+
+header #logo-location-search-basket .basket .price {
+  border-radius: 50%;
+  padding: 10px 2px;
+  cursor: pointer;
+  border: 1px solid #bb9f9f;
+}
+
+header #logo-location-search-basket .basket .basketproducts {
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #bb9f9f;
+  background-color: #fff1ee;
+  position: relative;
+  display: inline-block;
+}
+
+header #logo-location-search-basket .basket .basketproducts i {
+  font-size: 20px;
+}
+
+header #logo-location-search-basket .basket .basketproducts span {
+  position: absolute;
+  right: -5px;
+  top: -9px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-weight: 400;
+  padding: 0px 7px;
+}
+
+header #allcatagories-navmenu .allcatagories {
+  margin-left: 28px;
+  height: 52px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header #allcatagories-navmenu .allcatagories button {
+  background-color: #2bbef9;
+  padding: 5px 25px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  height: 52px;
+}
+
+header #allcatagories-navmenu .allcatagories button i {
+  padding: 0px 10px;
+}
+
+header #allcatagories-navmenu .allcatagories .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: #edeef5;
+  text-align: center;
+  font-size: 14px;
+  width: auto;
+  bottom: -13px;
+  padding: 3px 6px;
+  border-radius: 20px;
+}
+
+header .active {
+  opacity: 1 !important;
+}
+
+header .selectcatagori {
+  padding-top: 20px;
+  margin-left: 44px;
+  width: 250px;
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .selectcatagori ul {
+  list-style: none;
+  border: 1px solid black;
+}
+
+header .selectcatagori ul li {
+  font-weight: 600;
+  padding-left: 10px;
+  padding: 10px 0px;
+}
+
+header .selectcatagori ul li img {
+  width: 7%;
+}
+
+header .selectcatagori ul li:hover {
+  color: blue;
+}
+
+header .selectcatagori ul li img {
+  margin-right: 20px;
+}
+
+header .selectcatagori ul li button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  width: 73px;
+  border: none;
+}
+
+header .selectcatagori ul li button:hover {
+  width: 100%;
+  background-color: white;
+  color: black;
+  width: 73px;
+  border: none;
+}
+
+header .navmenu {
+  height: 100%;
+}
+
+header .navmenu ul {
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navmenu ul li {
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+header .navmenu ul li:hover {
+  background-color: #3a59c9;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .navmenu ul li i {
+  padding-left: 10px;
+}
+
+header .fruitslist {
+  position: absolute;
+  z-index: 10;
+  left: 410px;
+  background-color: white;
+  opacity: 0;
+}
+
+header .fruitslist ul {
+  list-style: none;
+}
+
+header .fruitslist ul li {
+  padding: 10px;
+}
+
+header .fruitslist ul li:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+header .homelist {
+  position: absolute;
+  z-index: 20;
+  left: 470px;
+  background-color: white;
+  opacity: 0;
+}
+
+header .homelist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .homelist ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+main .mycard {
+  position: relative;
+  border: none;
+  border-right: 1px solid #edeef5;
+  border-bottom: 1px solid #edeef5;
+}
+
+main .mycard .card-body {
+  position: inherit;
+}
+
+main .mycard .card-body h5 {
+  font-size: 15px;
+  color: #202335;
+  font-family: "Intern",sans-serif;
+}
+
+main .mycard .card-body .stock {
+  color: #00b853;
+  font-size: .6875rem;
+  margin-bottom: 0.625rem;
+  font-weight: bold;
+}
+
+main .mycard .card-body .rateing {
+  font-family: 'klbtheme';
+  font-size: 11px;
+  padding-top: 10px;
+}
+
+main .mycard .card-body .rateing .activerateing {
+  color: orange;
+}
+
+main .mycard .card-body .price .oldprice {
+  text-decoration: line-through;
+  color: #c2c2de;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+main .mycard .card-body .price .newprice {
+  font-family: "Dosis",sans-serif;
+}
+
+main .mycard .card-body a {
+  width: 100%;
+  background-color: #233a95;
+  color: white;
+  border-radius: 20px;
+  opacity: 0;
+  position: relative;
+}
+
+main .mycard:hover a {
+  opacity: 1;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  margin-top: 220px;
+}
+
+main .mycard:hover {
+  position: relative;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 2px solid #edeef5;
+  z-index: 12;
+}
+
+main .mycard .percent {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #0077b5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Dosis", sans serif;
+  font-weight: 700;
+}
+
+main .mycard .zoom {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 30px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+}
+
+main .mycard .zoom:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+main .mycard .heart {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 80px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  opacity: 0;
+}
+
+main .mycard .heart:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+main .mycard:hover .heart {
+  opacity: 1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+main .mycard:hover .zoom {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+/*# sourceMappingURL=home2.css.map */
